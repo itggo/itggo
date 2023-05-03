@@ -1,0 +1,32 @@
+<?php
+
+$fecha = date_create("2023-05-03"); // creamos una fecha para poder obtener el día de la semana
+$dia = date_format($fecha, "D"); // obtenemos el día de la semana en formato de tres letras (en inglés)
+
+switch ($dia) {
+  case "Mon":
+    echo "Lunes";
+    break;
+  case "Tue":
+    echo "Martes";
+    break;
+  case "Wed":
+    echo "Miércoles";
+    break;
+  case "Thu":
+    echo "Jueves";
+    break;
+  case "Fri":
+    echo "Viernes";
+    break;
+  case "Sat":
+    echo "Sábado";
+    break;
+  case "Sun":
+    echo "Domingo";
+    break;
+  default:
+    echo "No se reconoce el día de la semana";
+}
+
+?>
